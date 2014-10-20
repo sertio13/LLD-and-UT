@@ -49,4 +49,4 @@ objExcel.Quit
  
 Next
 Wscript.Echo "Completed! Open LLD_OK.txt or LLD_NOT_OK.txt to get the details" 
-'objShell.run("powershell -noexit -file C:\Users\minda\Desktop\Scripts\PS\outlook_email.ps1")
+'objShell.run("powershell -noexit -file C:\Users\minda\Desktop\Scripts\PS\outlook_email.ps1") //For Email
