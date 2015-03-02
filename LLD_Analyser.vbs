@@ -3,8 +3,8 @@ Set objShell = CreateObject("Wscript.shell")
 strFolder = InputBox("Enter the path where the LLD's are located:")
 Set objFolder = objFSO.GetFolder(strFolder)
 Set colFiles = objFolder.Files
-Set ApprovedLLD = objFSO.CreateTextFile("C:\Users\minda\Desktop\Scripts\LLD_OK.txt", True)
-Set NeedtoActLLD = objFSO.CreateTextFile("C:\Users\minda\Desktop\Scripts\LLD_NOT_OK.txt", True)
+Set ApprovedLLD = objFSO.CreateTextFile("C:\Users\minda\Desktop\Everything\Scripts\LLD and UT\LLD_OK.txt", True)
+Set NeedtoActLLD = objFSO.CreateTextFile("C:\Users\minda\Desktop\Everything\Scripts\LLD and UT\LLD_NOT_OK.txt", True)
 For Each objFile in colFiles
 Set objExcel = CreateObject("Excel.Application")
 Set objWorkbook = objExcel.Workbooks.Open _
@@ -49,4 +49,4 @@ objExcel.Quit
  
 Next
 Wscript.Echo "Completed! Open LLD_OK.txt or LLD_NOT_OK.txt to get the details" 
-'objShell.run("powershell -noexit -file C:\Users\minda\Desktop\Scripts\PS\outlook_email.ps1") //For Email
+'objShell.run("powershell -noexit -file C:\Users\minda\Desktop\Everything\Scripts\PS\outlook_email.ps1") //For Email
